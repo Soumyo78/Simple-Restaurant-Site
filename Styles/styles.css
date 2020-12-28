@@ -3,10 +3,16 @@
 
 .body-container{
     margin: 0;
-    padding: 0;
-    background-image: url("https://images.pexels.com/photos/326279/pexels-photo-326279.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    padding: 20px;
+    /* background-image: url("https://images.pexels.com/photos/326279/pexels-photo-326279.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+}
+
+.title-pic{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
 }
 
 .main-container{
@@ -26,10 +32,7 @@
     padding: 0;
     overflow: hidden;
     background-color: #333;
-}
-
-.nav-list li{
-    float: left;
+    display: flex;
 }
 
 .nav-list li a{
@@ -44,21 +47,95 @@
     background-color: #111;
 }
 
-.title-container{
-    /* background-color: orangered;
-    color: black; */
-    padding-left: 20px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#main-title{
-    font-family: 'Ranchers', cursive;
-    font-size: 30px;
-    color: white;
-}
-
-#tagline{
+.title-text{
+    color: brown;
     font-family: 'Architects Daughter', cursive;
+}
+
+.description{
+    display: flex;
+}
+
+.cont-img-container{
+    padding: 10px;
+}
+
+.cont-content{
+    padding: 10px;
+}
+
+.content-container{
+    display: flex;
+}
+
+.list-container{
+    flex: 1;
+    background-color: orangered;
+    padding: 10px;
+}
+
+.description-container{
+   
+    flex: 2.5;
+    padding: 10px;
+}
+
+.description{
+    display: flex;
+    flex-direction: row;
+}
+
+.description-text{
+    font-family: 'Raleway', sans-serif;
+}
+
+.list-title{
+    background-color: white;
+    font-weight: bold;
+    padding: 10px;
+    font-family: arial;
+}
+
+.list-text{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
+    padding: 10px;
+}
+
+.cont-title{
+    color: green;
+    font-family: arial;
+}
+
+.list-item{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 992px){
+    .nav-list li{
+        float: down;
+    }
+    .description{
+        flex-direction: column;
+    }
+
+    .list-container{
+        flex: 1;
+    }
+    
+    .description-container{
+       
+        flex: 1.5;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .content-container{
+        flex-direction: column-reverse;
+    }
+
+    .nav-list{
+        flex-direction: column;
+    }
 }
